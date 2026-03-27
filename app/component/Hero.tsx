@@ -35,8 +35,8 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <button className="btn-glass mt-6 mx-2">Voir mes projets</button>
-            <button className="btn-glasses mt-6">Me contacter</button>
+            <button className="btn-glass mt-6 mx-2"><a href="#projet">Voir mes projets</a></button>
+            <button className="btn-glasses mt-6"><a href="#contact">Me contacter</a></button>
           </motion.div>
         </motion.div>
 
