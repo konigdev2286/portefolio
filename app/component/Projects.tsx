@@ -69,7 +69,7 @@ function Projets() {
 
   return (
     <section
-      className="flex flex-col items-center justify-center min-h-screen px-4 py-12"
+      className="flex flex-col items-center justify-center min-h-screen py-12"
       id="projet"
     >
       <div className="w-full max-w-6xl text-center">

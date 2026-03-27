@@ -9,7 +9,7 @@ function Apropos() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="flex items-center justify-center px-4"
+      className="flex items-center justify-center lg:pt-18 pt-10"
       id="propos"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full max-w-6xl items-center">

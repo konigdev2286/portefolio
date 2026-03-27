@@ -6,7 +6,7 @@ function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-6 sm:px-6 lg:px-10 mx-4 my-7 z-50">
+    <div className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-6 sm:px-6 lg:px-10 my-7 z-50">
       <div className="glass backdrop-blur-md flex justify-between py-2 px-8 items-center rounded-xl">
         
         {/* Logo */}

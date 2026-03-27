@@ -8,7 +8,7 @@ export default function Hero() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="flex items-center justify-center min-h-screen pt-18"
+      className="flex items-center justify-center min-h-screen lg:pt-18 pt-26"
       id="hero"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-11/12 max-w-6xl items-center">
