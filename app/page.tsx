@@ -7,7 +7,7 @@ import Projets from "./component/Projects"
 
 export default function Page() {
   return (
-    <div className="px-15">
+    <div className="px-5">
       <NavBar />
       <Hero />   {/* Hero animé dès le chargement */}
       <hr className="text-[var(--vert)]"/>

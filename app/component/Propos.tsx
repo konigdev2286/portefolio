@@ -28,7 +28,7 @@ function Apropos() {
           <h2 className="text-gray-200 text-3xl sm:text-4xl lg:text-6xl font-extrabold mt-6">
             Qui suis-je ?
           </h2>
-          <p className="text-gray-300 mt-6 text-sm sm:text-base lg:text-lg leading-relaxed">
+          <p className="text-gray-300 mt-6 text-sm sm:text-base text-justify lg:text-lg leading-relaxed">
             Je suis un développeur passionné par la création d’expériences digitales immersives.
             Mon objectif est de transformer des idées en solutions concrètes, qu’il s’agisse de sites web performants
             ou d’applications mobiles élégantes. J’aime allier créativité et technologie pour donner vie à des projets uniques.
