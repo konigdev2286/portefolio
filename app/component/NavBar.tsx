@@ -16,10 +16,11 @@ function NavBar() {
 
         {/* Menu desktop */}
         <ul className="hidden md:flex gap-4 sm:gap-6 text-sm sm:text-base md:text-lg">
-          <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Accueil</a></li>
-          <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Projets</a></li>
-          <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Compétences</a></li>
-          <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Contact</a></li>
+          <li><a href="#hero" className="hover:text-[var(--vert)] transition-colors duration-300">Accueil</a></li>
+          <li><a href="#propos" className="hover:text-[var(--vert)] transition-colors duration-300">A propos</a></li>
+          <li><a href="#projet" className="hover:text-[var(--vert)] transition-colors duration-300">Projets</a></li>
+          <li><a href="#competence" className="hover:text-[var(--vert)] transition-colors duration-300">Compétences</a></li>
+          <li><a href="#contact" className="hover:text-[var(--vert)] transition-colors duration-300">Contact</a></li>
         </ul>
 
         {/* Bouton hamburger mobile */}
@@ -47,10 +48,11 @@ function NavBar() {
       {isOpen && (
         <div className="md:hidden mt-2 glass backdrop-blur-md rounded-xl py-4 px-6">
           <ul className="flex flex-col gap-4 text-gray-200 text-base">
-            <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Accueil</a></li>
-            <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Projets</a></li>
-            <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Compétences</a></li>
-            <li><a href="#" className="hover:text-[var(--vert)] transition-colors duration-300">Contact</a></li>
+            <li><a href="#hero" className="hover:text-[var(--vert)] transition-colors duration-300">Accueil</a></li>
+            <li><a href="#propos" className="hover:text-[var(--vert)] transition-colors duration-300">A propos</a></li>
+            <li><a href="#projet" className="hover:text-[var(--vert)] transition-colors duration-300">Projets</a></li>
+            <li><a href="#competence" className="hover:text-[var(--vert)] transition-colors duration-300">Compétences</a></li>
+            <li><a href="#contact" className="hover:text-[var(--vert)] transition-colors duration-300">Contact</a></li>
           </ul>
         </div>
       )}

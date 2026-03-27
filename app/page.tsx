@@ -4,11 +4,12 @@ import Propos from "./component/Propos"
 import Competence from "./component/Competence"
 import Contact from "./component/Contact"
 import Projets from "./component/Projects"
-function page() {
+
+export default function Page() {
   return (
     <div className="px-15">
       <NavBar />
-      <Hero />
+      <Hero />   {/* Hero animé dès le chargement */}
       <hr className="text-[var(--vert)]"/>
       <Propos />
       <hr className="text-[var(--vert)]"/>
@@ -17,9 +18,6 @@ function page() {
       <Competence />
       <hr className="text-[var(--vert)]"/>
       <Contact />
-
     </div>
   )
 }
-
-export default page

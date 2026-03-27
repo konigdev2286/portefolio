@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+import { motion } from "framer-motion"
+import React from "react"
 
 function Competence() {
   const skills = [
@@ -11,7 +13,7 @@ function Competence() {
   ]
 
   return (
-    <section className="flex items-center justify-center py-12">
+    <section className="flex items-center justify-center py-12" id='competence'>
       <div className="w-full max-w-6xl text-center">
         <span className="text-[var(--vert)] glasse py-1 px-4">
           Mes compétences
@@ -26,16 +28,26 @@ function Competence() {
         {/* Grille responsive */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((skill, index) => (
-            <div key={index} className="text-left">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="text-left"
+            >
               <p className="text-gray-200 font-semibold mb-2">{skill.name}</p>
               <div className="w-full bg-white/10 rounded-full h-4 backdrop-blur-md border border-white/10">
-                <div
-                  className="bg-[var(--vert)] h-4 rounded-full transition-all duration-500"
-                  style={{ width: `${skill.level}%` }}
-                ></div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  whileInView={{ width: `${skill.level}%` }}
+                  transition={{ duration: 1, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  className="bg-[var(--vert)] h-4 rounded-full"
+                ></motion.div>
               </div>
               <p className="text-gray-400 text-sm mt-1">{skill.level}%</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
